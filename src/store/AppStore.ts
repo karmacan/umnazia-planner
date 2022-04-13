@@ -54,7 +54,6 @@ export const createAppStore = init => {
     setLessonField: function (field: FieldType, value: string) {
       this.lesson[field] = value;
       this.error[field] = false;
-      console.log(value);
     },
     resetLesson: function () {
       this.lesson = {};
