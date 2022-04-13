@@ -1,0 +1,32 @@
+.App {
+  /* Extra small screen */
+  @media (max-width: 380px) {
+    .content .lessons-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* Small screen */
+  @media (min-width: 380px) and (max-width: 580px) {
+    .content .lessons-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  /* Medium screen */
+  @media (min-width: 580px) and (max-width: 960px) {
+    .content .lessons-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  /* Large screen */
+  @media (min-width: 960px) and (max-width: 1280px) {
+    .content .lessons-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  /* Extra large screen */
+  @media (min-width: 1280px) {
+    .content .lessons-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+  }
+}

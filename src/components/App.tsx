@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import {observer} from 'mobx-react-lite';
 import {useAppStore} from 'store/AppStore';
 import './App.scss';
+import './App.media.scss';
 import Button from '@mui/material/Button';
 import {SubmitModal} from './SubmitModal/SubmitModal';
 import TextField from '@mui/material/TextField';
