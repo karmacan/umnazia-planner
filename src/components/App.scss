@@ -1,0 +1,48 @@
+.App {
+  padding: 20px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .MuiButton-root {
+      margin-bottom: 10px;
+    }
+    .no-lessons {
+      color: var(--lightest-font-color);
+      user-select: none;
+    }
+    .lessons-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+      .card {
+        margin: 5px;
+        padding: 5px 10px;
+        border-radius: 4px;
+        box-shadow: /*R*/ 0 /*B*/ 2px /*grad*/ 5px /*solid*/ 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        background: var(--medium-theme-color);
+        &:hover {
+          transform: scale(1.01);
+          background: var(--theme-color);
+          transition: all .1s ease 0s;
+        }
+        .fields {
+          pointer-events: none;
+          .text-field {
+            display: block;
+            & > div {
+              width: 100%;
+            }
+          }
+          .datetime {
+            padding: 10px 0;
+            input {
+              padding: 2px 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

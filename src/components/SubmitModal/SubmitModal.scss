@@ -1,0 +1,33 @@
+.MuiModal-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal {
+    /* width: 70vw; */
+    background: var(--theme-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    &.submit {
+      & > div {
+        margin-bottom: 10px;
+        &.text-field {
+          display: block;
+          & > div {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &.delete {
+      padding: 20px;
+      .delete-title {
+        margin-bottom: 10px;
+      }
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+}
